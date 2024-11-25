@@ -12,7 +12,7 @@ Extract the ZIP file into a directory on your computer. The directory should con
 In a command prompt, navigate to the directory and run:
 
 ```
-uv run jupyter-notebooks
+uv run jupyter-notebook
 ```
 
 The first time you run this, it will install Python (if necessary) and the relevant dependent packages, and create a virtual environment. Subsequent times will not require this and so will be much quicker.
