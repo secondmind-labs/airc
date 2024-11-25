@@ -4,12 +4,17 @@
 
 ### Step 1: Extract the ZIP file
 
-Extract the ZIP file into a directory on your computer. The directory should contain a file called `UV.exe`. If this is missing (or if you are running on a platform other than Windows) you can download it from https://github.com/astral-sh/uv/releases or (if you already have Python installed) install it with `pip install uv`.
+Extract the ZIP file into a directory on your computer.
 
+*The resulting directory should contain a file called `UV.exe`. If this is missing (or if you are running on a platform other than Windows) you can download uv from https://github.com/astral-sh/uv/releases: simply select the correct platform and extract the executables into the AI-RC directory.*
 
-### Step 2: Start Jupyter
+### Step 2: Install Microsoft C++ runtime libraries
 
-In a command prompt, navigate to the directory and run:
+If using Windows, download and install the latest Microsoft Visual C++ runtime libraries from https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist.
+
+### Step 3: Start Jupyter
+
+In a PowerShell prompt, navigate to the directory and run:
 
 ```
 ./uv run jupyter-notebook
