@@ -9,6 +9,7 @@ dependencies = [
     "notebook",
     "matplotlib",
     "taskipy",
+    "tensorflow-intel; sys_platform == 'win32'"
 ]
 
 [tool.taskipy.tasks]
