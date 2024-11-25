@@ -23,7 +23,7 @@ dependencies = [
     { name = "matplotlib" },
     { name = "notebook" },
     { name = "taskipy" },
-    { name = "tensorflow-intel", marker = "sys_platform == 'win32'" },
+    { name = "tensorflow-cpu", marker = "sys_platform == 'win32'" },
     { name = "trieste" },
 ]
 
@@ -32,8 +32,8 @@ requires-dist = [
     { name = "matplotlib" },
     { name = "notebook" },
     { name = "taskipy" },
-    { name = "tensorflow-intel", marker = "sys_platform == 'win32'" },
-    { name = "trieste" },
+    { name = "tensorflow-cpu", marker = "sys_platform == 'win32'" },
+    { name = "trieste", specifier = ">=4.2" },
 ]
 
 [[package]]
@@ -2180,7 +2180,7 @@ wheels = [
 ]
 
 [[package]]
-name = "tensorflow-intel"
+name = "tensorflow-cpu"
 version = "2.16.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
@@ -2208,9 +2208,9 @@ dependencies = [
     { name = "wrapt" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/31/5c/ff36582435be7ce60cb2c84e961372b76330928be8da6c85f7880a0f5df3/tensorflow_intel-2.16.2-cp310-cp310-win_amd64.whl", hash = "sha256:484024ee68c3bcea12e76b2358ed671cf02e71d121280268c3ee03d9513dd4ce", size = 376920038 },
-    { url = "https://files.pythonhosted.org/packages/46/87/c3e4e9fe7c630f38a6984afdd1d4ed531ef9c74dc66b86f46f6bdd89d608/tensorflow_intel-2.16.2-cp311-cp311-win_amd64.whl", hash = "sha256:d508e15fae4a60f233794c591d4b0e4b1ed92ccb3f017fd107950f5f45f3bd43", size = 376961926 },
-    { url = "https://files.pythonhosted.org/packages/c2/7d/d4b381e7a7a0c22179a886a3814a974adfb6edfdde9ef594f55902e4896b/tensorflow_intel-2.16.2-cp312-cp312-win_amd64.whl", hash = "sha256:239af202645145c1c39e7dfe714687e1b1a57a73e5022aacae0313d917f09608", size = 377067160 },
+    { url = "https://files.pythonhosted.org/packages/4f/31/e4e308298da18a19aacb681d46b43374843830e9a04c448d8894a13897cb/tensorflow_cpu-2.16.2-cp310-cp310-win_amd64.whl", hash = "sha256:53d19979e7cd32b81540925d13cb3a392c6d20cd69ad54366207a96a06eeaa7c", size = 2107 },
+    { url = "https://files.pythonhosted.org/packages/20/b8/24fabe3da735fddfd8a4ab4960be598f8ad2ff49f4fc74c2dcbf7de3b94f/tensorflow_cpu-2.16.2-cp311-cp311-win_amd64.whl", hash = "sha256:0a1497628f4251a6e6670c4fa6b84a8530030163ab5e77791f204e3a2ac220ca", size = 2107 },
+    { url = "https://files.pythonhosted.org/packages/0e/50/e78570358c06e4fb1affcef280246f83c9b291e6a388cadb8f8b8d43116e/tensorflow_cpu-2.16.2-cp312-cp312-win_amd64.whl", hash = "sha256:11df7d715b42eb5ef13138a75c8744052a05e8b50761606a3ca219943fa2e874", size = 2107 },
 ]
 
 [[package]]
@@ -2238,7 +2238,6 @@ version = "2.16.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "tensorflow", marker = "platform_machine == 'arm64' and platform_system == 'Darwin'" },
-    { name = "tensorflow-intel", marker = "platform_system == 'Windows'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/25/66/c504f415d5356def468e44e09dad60bf0d0f720b399e6c9af3488382e433/tensorflow_macos-2.16.2-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:6a945ad9c0add0d9be46f1addc07e5475ac24217609bfea6e05d9c5ab66e7204", size = 2135 },

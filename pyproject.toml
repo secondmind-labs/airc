@@ -5,7 +5,7 @@ description = "AI-RC lectures"
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 dependencies = [
-    "trieste",
+    "trieste>=4.2",
     "notebook",
     "matplotlib",
     "taskipy",
@@ -13,4 +13,4 @@ dependencies = [
 ]
 
 [tool.taskipy.tasks]
-notebooks = "uv run jupyter-notebook notebooks/"
+tutorial = "uv run jupyter-notebook tutorial/"
