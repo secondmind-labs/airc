@@ -1,0 +1,15 @@
+[project]
+name = "airc"
+version = "0.1.0"
+description = "AI-RC lectures"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "trieste",
+    "notebook",
+    "matplotlib",
+    "taskipy",
+]
+
+[tool.taskipy.tasks]
+notebooks = "uv run jupyter-notebook notebooks/"
