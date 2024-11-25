@@ -3,7 +3,7 @@ name = "airc"
 version = "0.1.0"
 description = "AI-RC lectures"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.13"
 dependencies = [
     "trieste",
     "notebook",
