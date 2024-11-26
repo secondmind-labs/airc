@@ -9,7 +9,8 @@ dependencies = [
     "notebook",
     "matplotlib",
     "taskipy",
-    "tensorflow-cpu; sys_platform == 'win32'"
+    "tensorflow-cpu; sys_platform == 'win32'",
+    "tensorflow-probability[tf]"
 ]
 
 [tool.taskipy.tasks]
