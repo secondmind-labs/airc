@@ -23,7 +23,6 @@ dependencies = [
     { name = "matplotlib" },
     { name = "notebook" },
     { name = "taskipy" },
-    { name = "tensorflow-cpu", marker = "sys_platform == 'win32'" },
     { name = "tensorflow-intel", marker = "sys_platform == 'win32'" },
     { name = "tensorflow-probability", extra = ["tf"] },
     { name = "trieste" },
@@ -34,7 +33,6 @@ requires-dist = [
     { name = "matplotlib" },
     { name = "notebook" },
     { name = "taskipy" },
-    { name = "tensorflow-cpu", marker = "sys_platform == 'win32'" },
     { name = "tensorflow-intel", marker = "sys_platform == 'win32'" },
     { name = "tensorflow-probability", extras = ["tf"] },
     { name = "trieste", specifier = ">=4.2" },
@@ -2181,40 +2179,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/53/b8/6ef11d379b8079310b20b89c6e1ebd5fb44f0acf51c0caf26366c5c928cf/tensorflow-2.16.2-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e7df529f8db271d3def80538aa7fcd6f5abe306f7b01cb5b580138df68afb499", size = 218991442 },
     { url = "https://files.pythonhosted.org/packages/d6/5c/691ab570c3637ba26d76f24d743a71f6afd952fc74e42243c108690d9f66/tensorflow-2.16.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5badc6744672a3181c012b6ab2815975be34d0573db3b561383634acc0d46a55", size = 590776704 },
     { url = "https://files.pythonhosted.org/packages/9b/cb/d3d450d41bd66813933b85f49bb872c66409852370e55d04bf426b8980f4/tensorflow-2.16.2-cp312-cp312-win_amd64.whl", hash = "sha256:505df82fde3b9c6a2a78bf679efb4d0a2e84f4f925202130477ca519ae1514e4", size = 2070 },
-]
-
-[[package]]
-name = "tensorflow-cpu"
-version = "2.16.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "absl-py" },
-    { name = "astunparse" },
-    { name = "flatbuffers" },
-    { name = "gast" },
-    { name = "google-pasta" },
-    { name = "grpcio" },
-    { name = "h5py" },
-    { name = "keras" },
-    { name = "libclang" },
-    { name = "ml-dtypes" },
-    { name = "numpy" },
-    { name = "opt-einsum" },
-    { name = "packaging" },
-    { name = "protobuf" },
-    { name = "requests" },
-    { name = "setuptools" },
-    { name = "six" },
-    { name = "tensorboard" },
-    { name = "tensorflow-io-gcs-filesystem", marker = "python_full_version < '3.12'" },
-    { name = "termcolor" },
-    { name = "typing-extensions" },
-    { name = "wrapt" },
-]
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/4f/31/e4e308298da18a19aacb681d46b43374843830e9a04c448d8894a13897cb/tensorflow_cpu-2.16.2-cp310-cp310-win_amd64.whl", hash = "sha256:53d19979e7cd32b81540925d13cb3a392c6d20cd69ad54366207a96a06eeaa7c", size = 2107 },
-    { url = "https://files.pythonhosted.org/packages/20/b8/24fabe3da735fddfd8a4ab4960be598f8ad2ff49f4fc74c2dcbf7de3b94f/tensorflow_cpu-2.16.2-cp311-cp311-win_amd64.whl", hash = "sha256:0a1497628f4251a6e6670c4fa6b84a8530030163ab5e77791f204e3a2ac220ca", size = 2107 },
-    { url = "https://files.pythonhosted.org/packages/0e/50/e78570358c06e4fb1affcef280246f83c9b291e6a388cadb8f8b8d43116e/tensorflow_cpu-2.16.2-cp312-cp312-win_amd64.whl", hash = "sha256:11df7d715b42eb5ef13138a75c8744052a05e8b50761606a3ca219943fa2e874", size = 2107 },
 ]
 
 [[package]]
