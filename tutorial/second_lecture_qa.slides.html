@@ -7474,10 +7474,10 @@ $$\hat{x}_1, \dots, \hat{x}_q = \arg\max \alpha(x_1,\dots, x_q)$$</p>
 <p>Possible choice of aquisitions;</p>
 <ul>
 <li><p><strong>q-EI</strong>: Jointly choose $\hat{x}_1, \dots, \hat{x}_q$ by
-$$ \hat{x}_1, \dots, \hat{x}_q = \arg\max_{x_1,\dots, x_q} \mathbb{E}[(\max_{i=1,\dots, q}  f(x_i) - y^*, 0)|\mathcal{D}]$$</p>
+$$ \hat{x}_1, \dots, \hat{x}_q = \arg\max_{x_1,\dots, x_q} \mathbb{E}[\max (\max_{i=1,\dots, q}  f(x_i) - y^*, 0)|\mathcal{D}]$$</p>
 </li>
 <li><p><strong>Batch UCB</strong>: Sequently choose $\hat{x_i}$ by
-$$\hat{x_i} = \arg\max \mu(x|\mathcal{D}) + \beta \sigma(x|\mathcal{D}, {\color{red} \hat{x}_1, \dots, \hat{x}_{i-1}})$$</p>
+$$\hat{x_i} = \arg\max \mu(x|\mathcal{D}) + \beta \sigma(x|\mathcal{D}, \color{red}{\hat{x}_1, \dots, \hat{x}_{i-1}})$$</p>
 </li>
 <li><p><strong>Thompson Sampling</strong>
 $$ \hat{x_i} = \arg\max_x f_i(x) \quad f_i \sim \mathcal{GP}(\cdot|\mathcal{D})$$</p>
@@ -7527,7 +7527,7 @@ Which is better?</p>
 </div>
 </div>
 </div>
-</div></section><section>
+</div><div class="fragment">
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7537,7 +7537,7 @@ Which is better?</p>
 </div>
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7555,7 +7555,7 @@ $$\mathbb{P}[f(x) &gt; y^*|\mathcal{D}]$$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>I think people prefer EI over PI since EI can priortise where we can expect larger improvement, which is ignored in PI.</p>
+<h2 id="Answer">Answer<a class="anchor-link" href="#Answer">¶</a></h2><p>I think people prefer EI over PI since EI can priortise where we can expect larger improvement, which is ignored in PI.</p>
 </div>
 </div>
 </div>
@@ -7659,7 +7659,7 @@ plt.legend()
 </div>
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
